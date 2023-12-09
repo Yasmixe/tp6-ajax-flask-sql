@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 150px 100px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.286);
+    padding: 20px 0px;
+}
+table, td, th, tr{
+border: 1px solid black;
+border-collapse: collapse;
+text-align: center;
+
+}
+table, tr{
+   width: 100%;
+}
+td, th{
+    height: 30px;
+}
+th{
+    background-color: #017eba    ;
+}
+.tableau{
+    margin-top: 30px;
+}
+
+#addbou{
+    color: white;
+    background-color: #05b505 ;
+    border: none;
+    width: 80px;
+    height: 26px;
+}
+.resume{
+    background-color: #efefef;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+}
+#console{
+    border: none;
+    width: 110px;
+    height: 26px;
+    color: white;
+    background-color: #bb8b02;
+    margin: 0px 10px;
+}
+#remove{
+    border: none;
+    width: 100px;
+    height: 26px;
+    color: white;
+    background-color: red  ;
+}
+#modify{
+    border: none;
+    width: 100px;
+    height: 26px;
+    color: white;
+    background-color: blue  ;
+}
+.boutons{
+    display: flex;
+    justify-content: end;
+    padding: 10px 20px;
+}
+.infos{
+    margin: 0px 20px;
+}
+.form-popup{
+    display: none;
+    margin: 30px 570px;
+     
+  }
