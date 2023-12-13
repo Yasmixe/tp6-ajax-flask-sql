@@ -1,0 +1,134 @@
+table,td,th{
+	border-collapse:collapse;				
+	border:1px solid #DDDDDD;
+}
+table{
+	width:100%;
+}
+td,th{
+	height:35px;				
+}
+th{
+	background-color:#017eba;
+	color:white;
+	font-size:13pt;
+}			
+.col_number{
+	text-align:center;
+	width:10%;
+}
+.col_text{
+	padding-left:10px;
+	width:35%;
+}
+.col_chkbox{
+	text-align:center;
+	width:5%;
+}	
+
+#table_container{
+	margin:50px 150px;
+	font-family: Calibri, Times;
+}
+
+
+#container_summary{
+	margin-top:2px;
+	border:1px solid #DDDDDD;
+	background-color: #efefef;
+	color:#303030;
+	display:flex;
+	flex-direction: row;
+}
+#p1, #p2, #p3{				
+	margin:0px;
+}
+
+#p1{
+	width:13%;
+	text-align: left;
+	padding:8px 0px 8px 10px;
+	
+}
+#p2{
+	width:0%;
+	text-align: right;
+	padding:8px 0px;
+}
+#p3{
+	width:72%;
+	text-align: right;
+	padding:8px 0px;
+}		
+
+
+#form_container{
+	border:1px solid #DDDDDD; 
+	padding:10px 10px;
+}
+
+.form_group{
+	display:inline-block;
+}
+
+.form_label{
+	font-weight:bold;
+}
+
+.form_field{
+	height:25px;
+}
+
+#container_btn{
+	border: 1px solid #DDDDDD; 
+	padding:10px; 
+	height:40px;
+}
+
+button{
+	height:32px; 
+	cursor:pointer;				
+	border:0px; 
+	color:white;
+	font-weight: bold; 
+}			
+
+.btn-add{
+	background-color:#05b505;
+	height: 32px;
+	cursor: pointer;
+	border: 0px;
+	color: white;
+	font-weight: bold;
+}
+
+.btn-del{
+	background-color:red;
+	float: right;
+	display:inline;
+	margin:5px;
+}
+
+.btn-console{
+	background-color:#bb8b02;
+	float: right;			
+	margin:5px;
+}
+
+button:hover{
+	opacity:80%;				
+}	
+.btn-actualiser{
+	background-color:black;
+	height: 32px;
+	cursor: pointer;
+	border: 0px;
+	color: white;
+	font-weight: bold;
+}
+.col_edit
+{
+	
+	text-align: center;
+	width: 10%;
+}

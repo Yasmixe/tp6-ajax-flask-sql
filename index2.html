@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>		
+	<title>Exo6</title>
+	</head>
+	<body>
+
+		<div id="table_container">
+
+			<div id="form_container">
+				<!--form action="addPerson" method="POST">--> 
+					<div class="form_group">
+						<label for="form_nom">Nom:</label>
+						<input type="text" id="form_nom" class="form_field" name="valNom"/>
+					</div>
+
+					<div class="form_group">
+						<label for="form_nom">Prénom:</label>
+						<input type="text" id="form_prenom" class="form_field" name="valPrenom"/>
+					</div>
+
+					<div class="form_group">
+						<label for="form_points">Points:</label>
+						<input type="number" id="form_points" class="form_field" name="valPoints"/>
+					</div>
+
+					<button class="btn-add" onclick="doNewData()">Ajouter</button> <!-- quand on clique sur ajouter on appele la fonction do newdata--> 
+
+					<button class="btn-actualiser" onclick="actualiser()">Actualiser</button>
+				<!--/form>-->
+			</div>
+
+
+			<div id="form_edit_container" hidden=true>
+
+					<div class="form_group">
+						<label class="form_label">id:</label>
+						<input type="text" id="form_edit_id" class="form_field" name="valId" readOnly=true/>
+					</div>
+
+					<div class="form_group">
+						<label class="form_label">Nom:</label>
+						<input type="text" id="form_edit_nom" class="form_field" name="valNom"/>
+					</div>
+
+					<div class="form_group">
+						<label class="form_label">Prénom:</label>
+						<input type="text" id="form_edit_prenom" class="form_field" name="valPrenom"/>
+					</div>
+
+					<div class="form_group">
+						<label class="form_label">Points:</label>
+						<input type="number" id="form_edit_points" class="form_field" name="valPoints"/>
+					</div>
+
+					<button class="btn-add" onclick="doEditData()">
+						Edit
+					</button>
+
+					<button class="btn-actualiser" onclick="annulerEdit()">
+						Annuler
+					</button>
+
+			</div>
+
+
+			<table border=1>
+				<tr>
+					<th class="col_number">N°</th>
+					<th class="col_text">Nom</th>
+					<th class="col_text">Prénom</th>
+					<th class="col_number">Points</th>				
+					<th class="col_chkbox">Select</th>				
+					<th class="col_edit">Edit</th>
+				</tr>
+				<!-- {% for d in data %}
+                <tr>
+                    <td class="col_number">{{d[0]}}</td>
+                    <td class="col_text">{{d[1]}}</td>
+                    <td class="col_text">{{d[2]}}</td>
+                    <td class="col_number">{{d[3]}}</td>
+                    <td class="col_chkbox"><input type="checkbox"/></td>
+                </tr>
+                {% endfor %} -->
+			</table>
+
+
+			<div id="container_summary">
+				<p id="p1">0 ligne(s)</p>				
+				<p id="p2"></p>
+				<p id="p3">Totale point(s)= 0</p>				
+			</div>
+
+
+			<div id="container_btn">
+
+				<button class="btn-del" onclick="deleteRow()" >
+					Supprimer
+				</button>
+
+				<button class="btn-console" onclick="consoleTableau()" >
+					console Tableau
+				</button>
+				<button class="btn-console" onclick="trier()" >
+					trier
+				</button>
+
+			</div>	
+
+		</div>
+
+	</body>	
+	<script src="{{url_for('static', filename='script.js')}}"></script>
+</html>	
